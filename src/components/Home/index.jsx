@@ -13,9 +13,9 @@ const Home = () => {
                         <p></p>
                     </div>
                 </div>
-                <button type="button">Learn More<img src={require("../../images/triangle.png")} /></button>
+                <button type="button">Learn More<img alt="icon" src={require("../../images/triangle.png")} /></button>
             </div>
-            <img src={require("../../images/rocket.png")} class="rocket" />
+            <img alt="icon" src={require("../../images/rocket.png")} class="rocket" />
         </div>
     )
 }
