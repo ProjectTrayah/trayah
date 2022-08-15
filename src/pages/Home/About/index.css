@@ -1,0 +1,122 @@
+.extra {
+  display: flex;
+  align-items:center;
+  font-size: 15px;
+  justify-items: center;
+  padding: 20px 100px;
+}
+
+.extra .leftextra {
+  overflow: hidden;
+  text-align: justify;
+}
+
+.leftextra, .rightextra{
+  width: 50%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about_center {
+  height: 100%;
+  padding: 20px;
+  font-weight: 300 !important;
+  background: url("../../../assets/images/about-us.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.about_header p {
+  font-weight: 300;
+  font-size: 35px;
+  color: #212529;
+}
+.about_header{
+  padding: 20px 0;
+  padding-left: 100px;
+}
+.about_header::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 50px;
+  height: 5px;
+  background-color: orange;
+}
+.about_header::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 120px;
+  height: 5px;
+  background-color: blue;
+}
+
+.about_content {
+  display: flex;
+  padding: 30px 0;
+  color: #6c757d;
+  font-size: 14px;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.about_box {
+  text-align: center;
+  padding: 30px;
+  width: 30%;
+}
+.about_box .icon:hover {
+  color: #005bea;
+}
+.about_box > p {
+  margin-top: 20px;
+}
+.about_center .p{
+  font-size: 30px;
+  color: #212529;
+  width: 100%;
+  line-height: 40px;
+  padding-left:120px
+}
+
+@media screen and (max-width: 768px) {
+
+  .about_box{
+    width: 25%;
+    padding: 8px;
+  }
+  .about_box span p{
+    font-size: 14px;
+  }
+  .about_box p:nth-child(3) {
+    display: none;
+  }
+  .extra .rightextra {
+    display: none;
+  }
+  .extra .leftextra {
+    width: 100%;
+  }
+  .about_header{
+    padding-left: 20px;
+  }
+  .about_center .p{
+    padding-left: 20px;
+  }
+  .extra{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
